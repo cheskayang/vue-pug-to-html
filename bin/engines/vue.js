@@ -24,7 +24,7 @@ module.exports = function(filePath) {
     name: "vue",
 
     hasVueTemplate() {
-      return contents.includes(`<template lang="pug">`);
+      return contents.includes(`<template lang='pug'>`) || contents.includes(`<template lang="pug">`);
     },
 
     convertTemplate() {
